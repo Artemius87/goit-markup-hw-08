@@ -728,6 +728,42 @@ textarea::placeholder {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .clients {
+    padding: 60px 0;
+  }
+  .clients-link {
+    width: 226px;
+    height: 92px;
+  }
+  .clients-title {
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
+  .clients-link {
+    margin-top: 0;
+    display: flex;
+    width: 170px;
+    height: 92px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients-title {
+    font-size: 36px;
+    line-height: 1.166;
+    margin-bottom: 50px;
+  }
+}
+
 .address {
   display: flex;
   flex-direction: column;
