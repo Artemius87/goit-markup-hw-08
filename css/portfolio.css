@@ -485,42 +485,49 @@ body {
   }
 }
 
-.portfolio {
-  padding: 94px 0;
-}
-
-.portfolio .title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-
-.portfolio.text {
-  font-size: 16px;
-  line-height: 1.87;
-  color: #757575;
-}
-
-.portfolio .list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.titles {
-  padding: 20px 24px;
-}
-
 .filters {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 50px;
+  justify-content: start;
+  padding-bottom: 40px;
 }
 
-.btn + .btn {
-  margin-left: 8px;
+@media screen and (min-width: 320px) {
+  .portfolio {
+    padding: 60px 0;
+  }
+  .portfolio .title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+  }
+  .portfolio.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  .portfolio .btn {
+    margin-right: 8px;
+  }
+  .portfolio .btn:nth-child(n + 4) {
+    margin-top: 15px;
+  }
+  .titles {
+    padding: 20px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-bottom: 40px;
+  }
 }
 
 .projects {
