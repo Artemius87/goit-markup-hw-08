@@ -32,8 +32,7 @@
       letter-spacing: 0.03em;
       color: $secondary-text-color;
     }
-
-
+  }
   .titles {
     padding: 20px 24px;
   }
@@ -45,7 +44,16 @@
     flex-wrap: nowrap;
     justify-content: center;
     padding-bottom: 14px;
- 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
+
+  .filters {
+    padding-bottom: 40px;
   }
 }
 
