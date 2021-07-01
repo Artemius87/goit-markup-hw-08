@@ -16,19 +16,20 @@
 <body>
   <header class="header">
     <div class="container main-header">
+      <div class="mobile-header">
       <a class="logo-header" href="./index.html"><span class="logo-color">Web</span>Studio</a>
-     <button class="navigator-btn" type="button" aria-expanded="false"
+     <button class="navigator-btn is-open" type="button" aria-expanded="false"
             data-menu-button>
             <svg width="24" height="16" aria-label="Переключатель мобильного меню">
-              <use class="icon-navigation-menu" href="./images/defs.svg#icon-menu_black"></use>
-              <use class="icon-navigation-close" href="./images/defs.svg#icon-Vector-1"></use>
+              <use class="icon-menu" href="./images/defs.svg#icon-Vector-1"></use>
+              <use class="icon-close" href="./images/defs.svg#icon-menu_black"></use>
             </svg>
-
      </button>
-     <div class="mobile-menu">
-      <nav class="navigation">
+    </div>
 
-               <ul class="site-nav list">
+     <div class="mobile-menu" data-menu>
+      <nav class="navigation">
+         <ul class="site-nav list">
           <li class="item"><a class="link current" href="./index.html">Студия</a></li>
           <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
           <li class="item"><a class="link" href="">Контакты</a></li>
@@ -464,6 +465,7 @@
 
 
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   <script>
     (() => {
       document.querySelector('.js-speaker-form').addEventListener('submit', e => {
