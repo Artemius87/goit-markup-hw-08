@@ -68,6 +68,12 @@ body {
   background-color: #188ce8;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -246,7 +252,7 @@ body {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 480px) {
   .site-nav .current::after {
     top: 35.5px;
     left: 188px;
@@ -339,7 +345,7 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
+@media screen and (min-width: 479px) and (max-width: 1199px) {
   .footer {
     padding: 60px 0;
     background-color: #2f303a;
