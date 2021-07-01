@@ -152,12 +152,9 @@ body {
 
 .modal {
   padding: 40px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -169,6 +166,8 @@ body {
 
 .backdrop {
   position: fixed;
+  z-index: 2;
+  padding: 93px 15px;
   top: 0;
   left: 0;
   width: 100%;
@@ -180,6 +179,22 @@ body {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    position: fixed;
+    z-index: 2;
+    padding: 208px 159px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    position: fixed;
+    z-index: 2;
+    padding: 220px 395px;
+  }
 }
 
 .modal-form {
@@ -247,11 +262,10 @@ textarea::placeholder {
 }
 
 .form-title {
-  margin-top: 11px;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -272,14 +286,12 @@ textarea::placeholder {
 
 .label-policy {
   display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
+  cursor: pointer;
   margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .label-policy::before {
@@ -365,12 +377,11 @@ textarea::placeholder {
 .site-nav .current::after {
   position: absolute;
   content: "";
-  top: 48.5px;
   left: 0px;
   width: 100%;
-  border-radius: 50px;
   height: 4px;
   background-color: #2196f3;
+  border-radius: 50px;
 }
 
 .site-contacts .item:not(:last-child) {
@@ -464,7 +475,7 @@ textarea::placeholder {
     top: 35.5px;
     left: 188px;
     border-radius: 50px;
-    width: 65px;
+    width: 22%;
     height: 4px;
   }
 }
@@ -519,6 +530,36 @@ textarea::placeholder {
   }
   .site-contacts .link {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0 25px 0;
+  }
+  .logo-header {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.192;
+  }
+  .site-nav .current::after {
+    top: 44.5px;
+    left: 0px;
+    width: 100%;
+  }
+  .site-contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 340px;
+  }
+  .site-contacts .item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .site-contacts .link {
+    font-size: 14px;
+    line-height: 1.143;
   }
 }
 

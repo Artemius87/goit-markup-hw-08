@@ -64,11 +64,11 @@ textarea::placeholder {
   color: $accent-color;
 }
 .form-title {
-  margin-top: 11px;
+  // margin-top: 11px;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -89,14 +89,15 @@ textarea::placeholder {
 
 .label-policy {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
+  cursor: pointer;
   margin-top: 20px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   &::before {
     content: "";

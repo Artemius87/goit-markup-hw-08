@@ -1,5 +1,7 @@
 .backdrop {
   position: fixed;
+  z-index: 2;
+  padding: 93px 15px;
   top: 0;
   left: 0;
   width: 100%;
@@ -10,5 +12,21 @@
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    position: fixed;
+    z-index: 2;
+    padding: 208px 159px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    position: fixed;
+    z-index: 2;
+    padding: 220px 395px;
   }
 }

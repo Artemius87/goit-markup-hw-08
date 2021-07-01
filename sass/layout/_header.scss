@@ -5,10 +5,10 @@
   border-bottom: 1px solid #ececec;
 }
 
-.navigation {
-  // display: flex;
-  // align-items: center;
-}
+// .navigation {
+//   display: flex;
+//   align-items: center;
+// }
 
 .mobile-header {
   display: flex;
@@ -62,15 +62,13 @@
 
     &::after {
       position: absolute;
-
       content: "";
-      top: 48.5px;
+      // top: 48.5px;
       left: 0px;
       width: 100%;
-      border-radius: 50px;
-
       height: 4px;
       background-color: $accent-color;
+      border-radius: 50px;
     }
   }
 }
@@ -170,7 +168,7 @@
     top: 35.5px;
     left: 188px;
     border-radius: 50px;
-    width: 65px;
+    width: 22%;
     height: 4px;
   }
 }
@@ -234,6 +232,41 @@
 
     & .link {
       font-size: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0 25px 0;
+  }
+
+  .logo-header {
+    margin-right: 93px;
+
+    font-size: 26px;
+    line-height: 1.192;
+  }
+
+  .site-nav .current::after {
+    top: 44.5px;
+    left: 0px;
+    width: 100%;
+  }
+
+  .site-contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 340px;
+
+    & .item:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+    & .link {
+      font-size: 14px;
+      line-height: 1.143;
     }
   }
 }
