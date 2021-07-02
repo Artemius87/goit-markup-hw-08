@@ -2,8 +2,8 @@
   position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
-  width: 370px;
-  min-height: 404px;
+  min-width: 450px;
+  // min-height: 404px;
   border: 1px solid #eeeeee;
   overflow: hidden;
 
@@ -57,30 +57,38 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects {
-    width: 354px;
-    height: 440px;
+    min-width: 354px;
+    margin: 0px;
 
-    &:last-child {
-      margin-top: 30px;
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
     }
-    &:nth-child(2n) {
-      margin-right: 0px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    & {
+      width: calc((100% - 4 * 15px) / 2);
     }
   }
 
   .list-pro {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects {
+    min-width: 370px;
+
+    & {
+      width: calc((100% - 4 * 15px) / 3);
+    }
   }
   .list-pro {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }

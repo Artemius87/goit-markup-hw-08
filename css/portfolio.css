@@ -699,8 +699,7 @@ img {
   position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
-  width: 370px;
-  min-height: 404px;
+  min-width: 450px;
   border: 1px solid #eeeeee;
   overflow: hidden;
   transition-duration: 250ms;
@@ -748,27 +747,34 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects {
-    width: 354px;
-    height: 440px;
+    min-width: 354px;
+    margin: 0px;
   }
-  .projects:last-child {
-    margin-top: 30px;
+  .projects:nth-child(2n + 1) {
+    margin-right: 30px;
   }
-  .projects:nth-child(2n) {
-    margin-right: 0px;
+  .projects:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .projects {
+    width: calc((100% - 4 * 15px) / 2);
   }
   .list-pro {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .projects {
+    min-width: 370px;
+  }
+  .projects {
+    width: calc((100% - 4 * 15px) / 3);
+  }
   .list-pro {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
