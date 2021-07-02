@@ -37,3 +37,15 @@
 .btn-close {
   margin: 30px auto 0 auto;
 }
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
